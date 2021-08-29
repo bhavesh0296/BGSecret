@@ -1,0 +1,20 @@
+PODS:
+  - RNCryptor (5.0.3)
+  - SwiftKeychainWrapper (3.2.0)
+
+DEPENDENCIES:
+  - RNCryptor (= 5.0.3)
+  - SwiftKeychainWrapper (= 3.2.0)
+
+SPEC REPOS:
+  trunk:
+    - RNCryptor
+    - SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  RNCryptor: c93d19029dcf7ff160aca0f24d6c9e7b0d82f664
+  SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
+
+PODFILE CHECKSUM: 795f29a9e208f90b6fb3711778242261aba517a0
+
+COCOAPODS: 1.10.0

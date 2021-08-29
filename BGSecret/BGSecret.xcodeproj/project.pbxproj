@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4029B48226DB8AC900B083F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B48126DB8AC900B083F8 /* AppDelegate.swift */; };
+		4029B48426DB8AC900B083F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B48326DB8AC900B083F8 /* SceneDelegate.swift */; };
+		4029B49B26DB8B9100B083F8 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B49926DB8B9100B083F8 /* PasswordViewController.swift */; };
+		4029B49C26DB8B9100B083F8 /* DecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B49A26DB8B9100B083F8 /* DecryptViewController.swift */; };
+		4029B4A026DB8BAA00B083F8 /* SecretMessageCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B49E26DB8BAA00B083F8 /* SecretMessageCareTaker.swift */; };
+		4029B4A126DB8BAA00B083F8 /* SecretMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B49F26DB8BAA00B083F8 /* SecretMessage.swift */; };
+		4029B4A426DB8BBD00B083F8 /* PasswordClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B4A326DB8BBD00B083F8 /* PasswordClient.swift */; };
+		4029B4A626DB8BCC00B083F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4029B4A526DB8BCC00B083F8 /* Assets.xcassets */; };
+		4029B4A826DB8BD200B083F8 /* SecretMessages.json in Resources */ = {isa = PBXBuildFile; fileRef = 4029B4A726DB8BD200B083F8 /* SecretMessages.json */; };
+		4029B4AC26DB8BE600B083F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B4A926DB8BE500B083F8 /* LaunchScreen.storyboard */; };
+		4029B4AD26DB8BE600B083F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4029B4AA26DB8BE500B083F8 /* Main.storyboard */; };
+		4029B4AE26DB8BE600B083F8 /* SecretMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B4AB26DB8BE600B083F8 /* SecretMessageCell.swift */; };
+		4029B4B026DB8DD200B083F8 /* DecryptionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B4AF26DB8DD200B083F8 /* DecryptionHandlerProtocol.swift */; };
+		4029B4B226DB8E3400B083F8 /* DecryptionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4029B4B126DB8E3400B083F8 /* DecryptionHandler.swift */; };
+		D4957815640F2FC1A9E5DDC3 /* Pods_BGSecret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE3165BE3FA08658C9922FB /* Pods_BGSecret.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B37A533EDCBEE21E362EA9D /* Pods-BGSecret.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGSecret.debug.xcconfig"; path = "Target Support Files/Pods-BGSecret/Pods-BGSecret.debug.xcconfig"; sourceTree = "<group>"; };
+		4029B47E26DB8AC900B083F8 /* BGSecret.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGSecret.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4029B48126DB8AC900B083F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4029B48326DB8AC900B083F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4029B48F26DB8ACA00B083F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4029B49926DB8B9100B083F8 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		4029B49A26DB8B9100B083F8 /* DecryptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptViewController.swift; sourceTree = "<group>"; };
+		4029B49E26DB8BAA00B083F8 /* SecretMessageCareTaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretMessageCareTaker.swift; sourceTree = "<group>"; };
+		4029B49F26DB8BAA00B083F8 /* SecretMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretMessage.swift; sourceTree = "<group>"; };
+		4029B4A326DB8BBD00B083F8 /* PasswordClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordClient.swift; sourceTree = "<group>"; };
+		4029B4A526DB8BCC00B083F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4029B4A726DB8BD200B083F8 /* SecretMessages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SecretMessages.json; sourceTree = "<group>"; };
+		4029B4A926DB8BE500B083F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4029B4AA26DB8BE500B083F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4029B4AB26DB8BE600B083F8 /* SecretMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretMessageCell.swift; sourceTree = "<group>"; };
+		4029B4AF26DB8DD200B083F8 /* DecryptionHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionHandlerProtocol.swift; sourceTree = "<group>"; };
+		4029B4B126DB8E3400B083F8 /* DecryptionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecryptionHandler.swift; sourceTree = "<group>"; };
+		4CE3165BE3FA08658C9922FB /* Pods_BGSecret.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BGSecret.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2303DCE9C2C4CC842EDB88 /* Pods-BGSecret.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BGSecret.release.xcconfig"; path = "Target Support Files/Pods-BGSecret/Pods-BGSecret.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4029B47B26DB8AC900B083F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4957815640F2FC1A9E5DDC3 /* Pods_BGSecret.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31A7BC1F589AC0B8651F209B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B37A533EDCBEE21E362EA9D /* Pods-BGSecret.debug.xcconfig */,
+				DF2303DCE9C2C4CC842EDB88 /* Pods-BGSecret.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4029B47526DB8AC900B083F8 = {
+			isa = PBXGroup;
+			children = (
+				4029B48026DB8AC900B083F8 /* BGSecret */,
+				4029B47F26DB8AC900B083F8 /* Products */,
+				31A7BC1F589AC0B8651F209B /* Pods */,
+				59403BF35FAD964AF1786422 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4029B47F26DB8AC900B083F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4029B47E26DB8AC900B083F8 /* BGSecret.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4029B48026DB8AC900B083F8 /* BGSecret */ = {
+			isa = PBXGroup;
+			children = (
+				4029B4A226DB8BB000B083F8 /* PasswordClient */,
+				4029B49D26DB8BA100B083F8 /* Models */,
+				4029B49626DB8AD800B083F8 /* AppDelegate */,
+				4029B49526DB8ACE00B083F8 /* Controllers */,
+				4029B49826DB8AE800B083F8 /* Resources */,
+				4029B49726DB8AE100B083F8 /* Views */,
+			);
+			path = BGSecret;
+			sourceTree = "<group>";
+		};
+		4029B49526DB8ACE00B083F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4029B49A26DB8B9100B083F8 /* DecryptViewController.swift */,
+				4029B49926DB8B9100B083F8 /* PasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4029B49626DB8AD800B083F8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4029B48126DB8AC900B083F8 /* AppDelegate.swift */,
+				4029B48326DB8AC900B083F8 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4029B49726DB8AE100B083F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4029B4A926DB8BE500B083F8 /* LaunchScreen.storyboard */,
+				4029B4AA26DB8BE500B083F8 /* Main.storyboard */,
+				4029B4AB26DB8BE600B083F8 /* SecretMessageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4029B49826DB8AE800B083F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4029B4A726DB8BD200B083F8 /* SecretMessages.json */,
+				4029B4A526DB8BCC00B083F8 /* Assets.xcassets */,
+				4029B48F26DB8ACA00B083F8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4029B49D26DB8BA100B083F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4029B49F26DB8BAA00B083F8 /* SecretMessage.swift */,
+				4029B49E26DB8BAA00B083F8 /* SecretMessageCareTaker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4029B4A226DB8BB000B083F8 /* PasswordClient */ = {
+			isa = PBXGroup;
+			children = (
+				4029B4A326DB8BBD00B083F8 /* PasswordClient.swift */,
+				4029B4AF26DB8DD200B083F8 /* DecryptionHandlerProtocol.swift */,
+				4029B4B126DB8E3400B083F8 /* DecryptionHandler.swift */,
+			);
+			path = PasswordClient;
+			sourceTree = "<group>";
+		};
+		59403BF35FAD964AF1786422 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CE3165BE3FA08658C9922FB /* Pods_BGSecret.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4029B47D26DB8AC900B083F8 /* BGSecret */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4029B49226DB8ACA00B083F8 /* Build configuration list for PBXNativeTarget "BGSecret" */;
+			buildPhases = (
+				F91236C3C982A9C5686A4168 /* [CP] Check Pods Manifest.lock */,
+				4029B47A26DB8AC900B083F8 /* Sources */,
+				4029B47B26DB8AC900B083F8 /* Frameworks */,
+				4029B47C26DB8AC900B083F8 /* Resources */,
+				1B5356085B9DFBC49C51D326 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BGSecret;
+			productName = BGSecret;
+			productReference = 4029B47E26DB8AC900B083F8 /* BGSecret.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4029B47626DB8AC900B083F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Bhavesh;
+				TargetAttributes = {
+					4029B47D26DB8AC900B083F8 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 4029B47926DB8AC900B083F8 /* Build configuration list for PBXProject "BGSecret" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4029B47526DB8AC900B083F8;
+			productRefGroup = 4029B47F26DB8AC900B083F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4029B47D26DB8AC900B083F8 /* BGSecret */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4029B47C26DB8AC900B083F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4029B4AC26DB8BE600B083F8 /* LaunchScreen.storyboard in Resources */,
+				4029B4A826DB8BD200B083F8 /* SecretMessages.json in Resources */,
+				4029B4A626DB8BCC00B083F8 /* Assets.xcassets in Resources */,
+				4029B4AD26DB8BE600B083F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B5356085B9DFBC49C51D326 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGSecret/Pods-BGSecret-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BGSecret/Pods-BGSecret-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BGSecret/Pods-BGSecret-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F91236C3C982A9C5686A4168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BGSecret-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4029B47A26DB8AC900B083F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4029B49C26DB8B9100B083F8 /* DecryptViewController.swift in Sources */,
+				4029B48226DB8AC900B083F8 /* AppDelegate.swift in Sources */,
+				4029B48426DB8AC900B083F8 /* SceneDelegate.swift in Sources */,
+				4029B4A126DB8BAA00B083F8 /* SecretMessage.swift in Sources */,
+				4029B49B26DB8B9100B083F8 /* PasswordViewController.swift in Sources */,
+				4029B4AE26DB8BE600B083F8 /* SecretMessageCell.swift in Sources */,
+				4029B4A426DB8BBD00B083F8 /* PasswordClient.swift in Sources */,
+				4029B4B226DB8E3400B083F8 /* DecryptionHandler.swift in Sources */,
+				4029B4B026DB8DD200B083F8 /* DecryptionHandlerProtocol.swift in Sources */,
+				4029B4A026DB8BAA00B083F8 /* SecretMessageCareTaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4029B49026DB8ACA00B083F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4029B49126DB8ACA00B083F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4029B49326DB8ACA00B083F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B37A533EDCBEE21E362EA9D /* Pods-BGSecret.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5RKT2K7BV;
+				INFOPLIST_FILE = BGSecret/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bhavesh.com.BGSecret;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4029B49426DB8ACA00B083F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2303DCE9C2C4CC842EDB88 /* Pods-BGSecret.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5RKT2K7BV;
+				INFOPLIST_FILE = BGSecret/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bhavesh.com.BGSecret;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4029B47926DB8AC900B083F8 /* Build configuration list for PBXProject "BGSecret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4029B49026DB8ACA00B083F8 /* Debug */,
+				4029B49126DB8ACA00B083F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4029B49226DB8ACA00B083F8 /* Build configuration list for PBXNativeTarget "BGSecret" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4029B49326DB8ACA00B083F8 /* Debug */,
+				4029B49426DB8ACA00B083F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4029B47626DB8AC900B083F8 /* Project object */;
+}
